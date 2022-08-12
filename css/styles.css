@@ -1,0 +1,63 @@
+/* --Header-- */
+.logohead {
+font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #000;
+    text-decoration: none;
+    cursor: default;
+}
+.logo_web {
+    color: #2196F3;
+}
+.link_nav  a {
+font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    cursor: pointer;
+}
+
+.contact-link {
+    font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #757575;
+        cursor: pointer;
+}
+
+.link:hover,
+.link:focus {
+    color: #2196F3;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #2196F3;
+    
+}
+
+.link_nav .link.current {
+    color: #2196F3;
+}
+
+
+/* --Body-- */
+body {
+    font-family: 'Roboto';
+    color: #757575;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
