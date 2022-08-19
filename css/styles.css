@@ -6,44 +6,89 @@
     --background_grey: #2F303A;
     --blue_button: #188CE8;
     --background_white: #F5F4Fa;
+}
 
+/* --Body-- */
 
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color_grey);
+    background-color: var(--color_white);
+    letter-spacing: 0.03em;
+}
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.visually_hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    outline-style: dashed;
+    background-color: purple;
+    width: 1600px;
+    height: 80px;
+    display: flex;
+    
 }
 
 /* --Header-- */
 .header {
     background-color: var(--color_white);
 }
+
+.link_nav {
+display: flex;
+}
 .logohead {
 font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+    line-height: 1,20;
     color: var(--color_black);
     text-decoration: none;
     cursor: pointer;
+
 }
 
 .logo_web {
     color: var(--brand_style);
+    
 }
-.link_nav  a {
+.link_nav_ul  a {
  
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,15;
     letter-spacing: 0.02em;
     color: var(--color_black);
     cursor: pointer;
+}
+
+.link_nav_ul {
+  
 }
 
 .contact-link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,15;
     letter-spacing: 0.02em;
     color: var(--color_grey);
     cursor: pointer;
@@ -60,45 +105,18 @@ font-family: 'Raleway';
     
 }
 
-.link_nav .link.current {
+.link_nav_ul .link.current {
     color: var(--brand_style);
-}
-
-
-/* --Body-- */
-
-body {
-    font-family: 'Roboto' , 'Raleway';
-    color: var(--color_grey);
-    background-color: var(--color_white);
-}
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
 }
 
 /* Main section*/
 
-.visually_hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+
 .main_headline {
  
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1,36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -113,7 +131,7 @@ ul {
      
         font-weight: 700;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1,9;
         display: flex;
         align-items: center;
         text-align: center;
@@ -121,40 +139,35 @@ ul {
         color: var(--color_white);
         background-color: var(--brand_style);
         cursor: pointer;
-        background: var(--blue_button);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-            border: none;
+        border: none;
+        border-radius: 4px;
+        
 }
 
 .button_headline:hover,
 .button_headline:focus {
     color: var(--color_white);
-    background-color: var(--blue_button);
+    background: var(--blue_button);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
 }
 
 .our_benefits h3 {
      
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1,14;
     text-transform: uppercase;
     color: var(--color_black);
 }
 .our_benefits p {
     
-        width: 270px;
-        height: 72px;
-        left: 215px;
-        top: 800px;
-
-     
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1,7;
         /* or 171% */
-        letter-spacing: 0.03em;
+        
         
 }
 
@@ -163,9 +176,8 @@ ul {
          
         font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
+        line-height: 1,16;
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--color_black);
 }
 
@@ -178,24 +190,23 @@ ul h3 {
      
         font-weight: 500;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1,18;
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--color_black);
 }
 
-.team_list p {
+.team_item p {
      
         font-weight: 400;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1,18;
         /* identical to box height */
         text-align: center;
-        letter-spacing: 0.03em;
+
         
 }
 
-.team_list {
+.team_item li {
     background: var(--color_white);
 }
 
@@ -203,13 +214,12 @@ ul h3 {
 
 
 .portfolio_buttons {
-     
+        font-family: inherit;
         font-weight: 500;
         font-size: 16px;
-        line-height: 26px;
+        line-height: 1,6;
         /* identical to box height, or 162% */
         text-align: center;
-        letter-spacing: 0.03em;
         cursor: pointer;
         background: var(--background_white);
         border-radius: 4px;
@@ -226,12 +236,12 @@ ul h3 {
         border-radius: 4px;
 }
 
-.our_jobs h3 {
+.our_jobs h2 {
     
      
         font-weight: 700;
         font-size: 18px;
-        line-height: 36px;
+        line-height: 2;
         /* identical to box height, or 200% */
         letter-spacing: 0.06em;
         color: var(--color_black);
@@ -241,9 +251,9 @@ ul h3 {
      
         font-weight: 400;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1,;
         /* identical to box height, or 188% */
-        letter-spacing: 0.03em;
+
 }
 .our_jobs {
     background-color: var(--color_white);
@@ -256,9 +266,8 @@ ul h3 {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1,7;
         /* or 171% */
-        letter-spacing: 0.03em;
         background-color: var(--background_grey);
         color: var(--color_white);
 }
@@ -272,9 +281,8 @@ ul h3 {
     font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
+        line-height: 1,20;
         /* identical to box height */
-        letter-spacing: 0.03em;
         color: var(--color_white);
 }
 
