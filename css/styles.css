@@ -38,23 +38,11 @@ ul {
     margin: -1px;
 }
 
-.container {
-    outline-style: dashed;
-    background-color: purple;
-    width: 1600px;
-    height: 80px;
-    display: flex;
-    
-}
-
 /* --Header-- */
 .header {
     background-color: var(--color_white);
 }
 
-.link_nav {
-display: flex;
-}
 .logohead {
 font-family: 'Raleway';
     font-weight: 700;
